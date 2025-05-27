@@ -1,0 +1,46 @@
+/*
+.grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(5, 1fr);
+            gap: 20px;
+            width: 100%;
+            max-width: 1110px;
+            box-sizing: border-box;
+}
+
+.grid-item img {
+            max-width: 350px;
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            display: block;
+}
+*/
+
+
+
+.grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3 columns */
+            grid-template-rows: repeat(5, 1fr); /* 5 rows */
+            gap: 20px; /* Gap between grid items */
+            width: 100%;
+            max-width: 1110px;
+            box-sizing: border-box;
+           
+
+        }
+
+        .grid-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 5px;
+        }
+
+        .grid-item img {
+            max-width: 350px;
+            width: 100%;
+           /* Ensure the image fills the grid cell */
+   
+        }
