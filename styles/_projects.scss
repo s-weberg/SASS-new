@@ -25,17 +25,25 @@ body {
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-self: center;
-  
+  justify-self: center; 
+}
+
+.section-sidebyside {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 1110px;
+  width: 100%;
+
 }
 
 .headpro {
-      max-width: 1110px;
+      max-width: 635px;
       width: 100%;
       display: flex;
       flex-direction: column;
       align-items: flex-start;
- 
+      display: inline-block;
 
 
     &__proheadline {
@@ -45,6 +53,7 @@ body {
       max-width: 500px;
       width: 100%;
       display: flex;
+      display: inline-block;
      
     }
 
@@ -56,21 +65,37 @@ body {
         letter-spacing: 0px;
         max-width: 635px;
         display: flex;
+        display: inline-block;
       
     }
 }
 
 
+table {
+  width: 100%; 
+  max-width: 435px; 
+  border-collapse: collapse; 
+  font-family: "Mulish", sans-serif;
+  margin-top: 70px;
+}
 
-.table {
-      display: flex;
-      font-family: "Mulish", sans-serif;
-      font-weight: map-get($font-weight, normal);
-      font-size: 16px;
-      line-height: 26px;
-      letter-spacing: 0px;
-    
-  
+.projects {
+  font-weight: map-get($font-weight, bold);
+  font-size: 16px;
+  padding: 10px 0;
+  border-bottom: 1px solid $text-color;
+  text-align: left; 
+  width: 150px;
+  color: #979797;
+}
+
+.portfolio {
+  font-weight: map-get($font-weight, bold);
+  font-size: 16px;
+  padding: 10px 0;
+  border-bottom: 1px solid $text-color;
+  text-align: left; 
+  width: 170px;
 }
 
 

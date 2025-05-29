@@ -3,12 +3,12 @@
 
 
 $primary-color: #FFFFFF;
-$accent-color: #ff652f;
+$button-color: #4A4FF2;
 $text-color: #111111;
 $font-weight: (
   "normal": 400,
   "medium": 500,
-  "bold": 700,
+  "bold": 700
 );
 
 
@@ -27,18 +27,28 @@ body {
   justify-self: center;
 }
 
+.section-sidebyside {
+   max-width: 1110px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 .conhead { 
-    max-width: 1110px;
-    width: 100%;
-  
+      max-width: 435px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+   
+   
 
 
   &__conheadline {
       font-family: "Mulish", sans-serif;
       font-weight: map-get($font-weight, bold);
       font-size: 40px;
-      max-width: 300px;
-      width: 100%;
+   
 
 }
 
@@ -48,23 +58,64 @@ body {
       font-size: 16px;
       line-height: 26px;
       letter-spacing: 0px;
+   
 }
 
 }
+
+/* Form styling */
 
 .form-container {
   display: flex;
-  display: inline-block;
+  max-width: 475px;
+  width: 100%;
+    height: 291px;
+  align-items: flex-end;
 }
 
 .form {
   display: flex;
   flex-direction: column;
-  width: 475px;
- 
+  max-width: 475px;
+  width: 100%;
+
 }
 
-.map {
-  margin: 20px;
+.form label {
+  font-family: "Mulish", sans-serif;
+  font-weight: map-get($font-weight, bold);
+  font-size: 16px;
+  margin-top: 30px;
+
 }
+
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="submit"] {
+
+  font-family: "Mulish", sans-serif;
+  font-size: 16px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+
+  
+}
+
+/* Style the submit button */
+.form input[type="submit"] {
+  background: $button-color;
+  color: $primary-color;
+  border: none;
+  cursor: pointer;
+  font-weight: map-get($font-weight, medium);
+  max-width: 125px;
+  width: 100%;
+  height: 50px;
+  margin-top: 40px;
+
+}
+
+
+
 

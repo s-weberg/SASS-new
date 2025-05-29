@@ -75,54 +75,220 @@ body {
     }
   }
 
-.info-box {
-      font-family: "Mulish", sans-serif;
-      font-weight: map-get($font-weight, bold);
-      font-size: 28px;
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin: 20px 0;
+  .gallery-item {
+    height: 200px;
+    background-color: #CCC;
+    border: 1px solid #999;
+  }
 }
 
-.table-home {
+.servicesContainer {
   max-width: 1110px;
   width: 100%;
-  margin: 20px 0 20px 0px;
-}
+  margin-top: 90px;
 
-.awards {
-      font-family: "Mulish", sans-serif;
-      font-weight: map-get($font-weight, bold);
-      font-size: 22px;
-      line-height: auto;
-}
 
-.site-of-day {
-      font-family: "Mulish", sans-serif;
-      font-weight: map-get($font-weight, bold);
-      font-size: 18px;
-      line-height: auto;
-}
 
-.genesis {
+  &__services {
+    max-width: 1110px;
+  width: 100%;
+    display: flex;
+    align-items: baseline;
+    font-family: "Mulish", sans-serif;
+    font-weight: map-get($font-weight, bold);
+    font-size: 28px;
+    line-height: 38px;
+  }
+
+    &__bulletList {
+      display: flex;
+      justify-content: flex-end;
+      max-width: 1110px;
+      width: 100%;
+    }
+
+    &__listOne {
       font-family: "Mulish", sans-serif;
       font-weight: map-get($font-weight, normal);
-      font-size: 16px;
-      line-height: auto;
+      font-size: 18px;
+      display: flex;
+      flex-direction: column;
+      display: inline-block;
+      align-items: baseline;
+      list-style-type: none;
+
+    }
+  
+    &__listTwo {
+      font-family: "Mulish", sans-serif;
+      font-weight: map-get($font-weight, normal);
+      font-size: 18px;
+ 
+      display: flex;
+      flex-direction: column;
+      display: inline-block;
+      align-items: baseline;
+      list-style-type: none;
+    
+    }
+
+  }
+
+
+.container {
+    max-width: 1110px;
+    width: 100%;
+    margin-top: 100px;
+ 
+     border-bottom: 1px solid #ccc;
+    
+    border-top: 1px solid #ccc;
+}
+
+.award-section-one {
+  margin-top: 20px;
+    margin-bottom: 20px;
+   border-bottom: 1px solid #ccc ;
+}
+
+.award-section {
+  margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+.headline {
+  display: flex;
+  font-family: "Mulish", sans-serif;
+  font-weight: map-get($font-weight, normal);
+  font-size: 22px;
+  margin-bottom: 10px;
+  width: 300px;
+}
+
+.award-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+ 
+}
+
+.category {
+  width: 300px;
+    font-family: "Mulish", sans-serif;
+    font-weight: map-get($font-weight, bold);
+    font-size: 18px;
+}
+
+.description {
+   font-family: "Mulish", sans-serif;
+   font-weight: map-get($font-weight, normal);
+   font-size: 16px;
+   color: #111111;
+   width: 200px;
+}
+
+.info {
+  font-family: "Mulish", sans-serif;
+  font-weight: map-get($font-weight, normal);
+  font-size: 16px;
+  opacity: 60%;
+  color: #111111;
 }
 
 .year {
   font-family: "Mulish", sans-serif;
   font-weight: map-get($font-weight, normal);
   font-size: 16px;
-  line-height: auto;
 }
 
-.genesis-info {
-  font-family: "Mulish", sans-serif;
-  font-weight: map-get($font-weight, normal);
-  font-size: 16px;
-  line-height: 26px;
-  height: 90px;
+
+
+
+  /*
+.containerAwards {
+  max-width: 1110px;
+  width: 100%;
   display: flex;
-  align-items: flex-start;
+ 
+
+    &__h2awards {
+   width: 400px;
+    display: flex;
+    display: inline-block;
+    align-items: baseline;
+    font-family: "Mulish", sans-serif;
+    font-weight: map-get($font-weight, bold);
+    font-size: 22px;
+  }
+
+  &__middleText {
+  width: 235px;
+     display: flex;
+   
+    display: inline-block;
+    align-items: baseline;
+    font-family: "Mulish", sans-serif;
+    font-weight: map-get($font-weight, bold);
+    font-size: 18px;
+  }
+
+  &__genesis {
+    width: 235px;
+    display: flex;
+    display: inline-block;
+    align-items: baseline;
+    font-family: "Mulish", sans-serif;
+    font-weight: map-get($font-weight, normal);
+    font-size: 16px;
+  }
+
+  &__year {
+  
+     display: flex;
+    display: inline-block;
+    justify-self: flex-end;
+    align-items: baseline;
+    font-family: "Mulish", sans-serif;
+    font-weight: map-get($font-weight, normal);
+    font-size: 16px;
+  }
+
+  &__info {
+    width: 170px;
+    font-family: "Mulish", sans-serif;
+    font-weight: map-get($font-weight, normal);
+    font-size: 16px;
+    line-height: 20px;
+    opacity: 60%;
+    margin-top: 1px;
+    display: flex;
+    display: inline-block;
+  }
+} */
+
+/*
+
+.awards {
+  padding: 20px 0;
+  h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .award-item {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-bottom: 10px;
+    span {
+      flex: 1;
+    }
+  }
 }
 
 
