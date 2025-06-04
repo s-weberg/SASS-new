@@ -22,25 +22,27 @@
 
 .grid-container {
             display: grid;
-            grid-template-columns: repeat(3, 1fr); /* 3 columns */
-            grid-template-rows: repeat(5, 1fr); /* 5 rows */
+            grid-template-columns: repeat(9, 1fr); /* 9 columns */
+            grid-template-rows: repeat(32, 1fr); /* 32 rows */
             gap: 20px; /* Gap between grid items */
-            width: 100%;
-            max-width: 1110px;
+            width: 1110px;
+            height: 1960px;
             box-sizing: border-box;
            
 
         }
 
         .grid-item {
-            position: relative;
+            display: block;
             overflow: hidden;
             border-radius: 5px;
+            
         }
 
         .grid-item img {
-            max-width: 350px;
             width: 100%;
-           /* Ensure the image fills the grid cell */
+            height: 100%;
+            object-fit: cover;
+            display: block;           /* Ensure the image fills the grid cell */
    
         }
