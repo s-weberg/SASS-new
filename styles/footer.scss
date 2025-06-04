@@ -39,7 +39,8 @@ $font-weight: (
     font-size: 18px;
     line-height: auto;
     letter-spacing: 0px;
-    
+    display: flex;
+    align-items: baseline;
 
   }
 
@@ -48,11 +49,6 @@ $font-weight: (
    display: inline-block;
    margin: 0px 20px 0px 0px;
     
-}
-
-.ul-icon {
-  display: flex;
-  display: inline-block;
 }
 
 .li-icon {
