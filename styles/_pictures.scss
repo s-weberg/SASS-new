@@ -21,26 +21,25 @@
 
 
 .gallery {
-            display: grid;
-
-            gap: 20px;
             width: 100%;
             max-width: 1110px;
             box-sizing: border-box;
             
         }
-
+/*
         .grid-item img {
   
             overflow: hidden;
             display: block; 
            
         }
-
+*/
         .grid-item  {
             width: 100%;
             display: grid;
             gap: 10px;
+            grid-template-columns: 3, 1fr;
+            grid-template-rows: repeat(32, 1fr);
         }
 
         .grid-item-1 {
